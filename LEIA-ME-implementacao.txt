@@ -1,0 +1,65 @@
+LP BLACK FRIDAY 2026 — 333OBRA | Guia de implementação
+
+1. ARQUIVOS
+- lp-black-friday-2026-333obra-cms.html -> colar no Magento (Conteúdo > Páginas > nova página > bloco HTML Code do Page Builder).
+- preview/ -> abrir preview-lp-black-friday-2026.html no navegador para ver a página (imagens pendentes aparecem como placeholder).
+- assets/ -> imagens já prontas (extraídas do mockup).
+
+2. IMAGENS — subir em pub/media/wysiwyg/black-friday-2026/
+
+Já prontas (pasta assets):
+  [OK] kv-black-friday-2026-compara-ai-333obra.png
+  [OK] logo-333obra-branco.png
+  [OK] icone-colher-333obra.png
+
+Pendentes (produzir/enviar com estes nomes):
+  [  ] argamassa-votomassa-aciii-20kg.png
+  [  ] bloco-ceramico-vedacao-11-5x14x24.png
+  [  ] blog-argamassa-polimerica.jpg
+  [  ] blog-blocos-de-concreto.jpg
+  [  ] blog-po-de-pedra.jpg
+  [  ] blog-qual-a-melhor-marca-de-cimento.jpg
+  [  ] blog-quantos-sacos-de-cimento-por-m2.jpg
+  [  ] blog-rejunte-para-banheiro.jpg
+  [  ] categoria-areia-e-agregados-black-friday.jpg
+  [  ] categoria-argamassas-black-friday.jpg
+  [  ] categoria-blocos-e-tijolos-black-friday.jpg
+  [  ] categoria-cimentos-black-friday.jpg
+  [  ] categoria-rejuntes-black-friday.jpg
+  [  ] cimento-cp-ii-f32-votoran-50kg.png
+  [  ] creator-bitelo-cupom-bitelo10.jpg
+  [  ] creator-gustavo-azulejista-rejunte.jpg
+  [  ] creator-juninho-lista-da-obra.jpg
+  [  ] hero-packshot-argamassa-votomassa.png
+  [  ] hero-packshot-cimento-votoran-50kg-frente.png
+  [  ] hero-packshot-cimento-votoran-50kg-lateral.png
+  [  ] hero-packshot-rejunte.png
+  [  ] oferta-areia-e-agregados-black-friday-333obra.png
+  [  ] oferta-argamassas-black-friday-333obra.png
+  [  ] oferta-blocos-e-tijolos-black-friday-333obra.png
+  [  ] oferta-cimentos-black-friday-333obra.png
+  [  ] oferta-rejuntes-black-friday-333obra.png
+  [  ] rejunte-para-area-externa.png
+  [  ] rejunte-para-banheiro.png
+  [  ] rejunte-para-cozinha.png
+  [  ] rejunte-para-porcelanato.png
+  [  ] saco-areia-media-20kg.png
+  [  ] tijolo-baiano-ceramico-11-5x14x24.png
+
+Tamanhos sugeridos: categorias 224x224 | vitrines/packshots 800x800 PNG fundo transparente | blog 1200x600 | creators 600x800.
+
+3. PONTOS A VALIDAR (buscar 'VALIDAR' no código)
+- Links marcados como #VALIDAR-URL-... (categorias, produtos, regulamento, checklist, WhatsApp, vídeos, Instagram, escolher loja).
+- Bloqueio 1: regra de desconto (teto 10% x R$ 200 a cada R$ 1.000).
+- Bloqueio 2: cumulatividade BITELO10 / CIMENTO10.
+- Bloqueio 5: frete grátis, entrega 24h, cobrimos o melhor preço.
+- Bloqueio 6: desconto vale para todos os sellers.
+- Data/hora de início e fim (contador configurado até 30/11/2026 23:59 BRT, atributo data-bf26-end).
+
+4. TÉCNICO
+- CSS isolado com prefixo .bf26- (não interfere no tema).
+- JS puro (setas dos carrosséis + contador). Se o Magento remover <script>, mover para o tema ou liberar no HTML Code.
+- JSON-LD FAQPage no final: se alterar uma pergunta no FAQ, alterar também no JSON-LD.
+- Um único H1 (hero). Title e meta description configurar no admin da página.
+- Vitrines com cards fixos; cada uma tem comentário indicando onde trocar por widget Insider/Magento.
+- Fonte Geologica via Google Fonts (remover o <link> se o tema já carregar).

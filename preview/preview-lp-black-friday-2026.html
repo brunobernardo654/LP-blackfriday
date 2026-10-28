@@ -1,0 +1,902 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PREVIEW — LP Black Friday 2026 | 333OBRA</title><style>body{margin:0}</style></head><body>
+<!-- =========================================================
+  LP BLACK FRIDAY 2026 — 333OBRA
+  Bloco para página CMS Magento (sem header/footer — usam o tema).
+  Imagens: subir em pub/media/wysiwyg/black-friday-2026/
+  Pontos pendentes de validação: buscar por "VALIDAR".
+========================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.bf26{--o:#EB6626;--o2:#FFAF3E;--ot:#B8470F;--k:#231F20;--n:#0E111A;--n2:#151B2A;--b:#4EBFEB;--y:#FFD83D;--g:#5A5556;--g2:#6E6869;--l:#E4E1E0;--s:#F4F2F1;
+  font-family:'Geologica',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--k);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.bf26 *,.bf26 *::before,.bf26 *::after{box-sizing:border-box}
+.bf26 img{max-width:100%;display:block}
+.bf26 a{color:var(--k)}
+.bf26 h1,.bf26 h2,.bf26 h3,.bf26 p{margin:0}
+.bf26-wrap{width:min(1240px,calc(100% - 32px));margin:0 auto}
+.bf26-sec{padding-top:72px}
+.bf26-eyebrow{font-weight:800;font-size:13px;line-height:1;letter-spacing:.16em;color:var(--ot);margin-bottom:8px}
+.bf26-h2{font-weight:700;font-size:36px;line-height:1.15;letter-spacing:-.01em}
+.bf26-sub{margin-top:8px;font-size:16px;line-height:24px;color:var(--g)}
+.bf26-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.bf26-headr{display:flex;gap:12px;align-items:center}
+.bf26-link{font-weight:700;font-size:15px;color:var(--k)}
+.bf26-link:hover{color:var(--ot)}
+.bf26-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.bf26-note{margin-top:12px;font-size:12px;line-height:1.5;color:var(--g)}
+
+/* botões */
+.bf26-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 24px;border-radius:8px;font-weight:700;font-size:15px;line-height:1;letter-spacing:.02em;text-decoration:none;border:2px solid transparent;cursor:pointer;transition:background .15s,color .15s}
+.bf26 .bf26-btn-pri{background:var(--o);color:var(--k)}
+.bf26 .bf26-btn-pri:hover{background:var(--o2);color:var(--k)}
+.bf26 .bf26-btn-ghost{background:transparent;color:#fff;border-color:#fff}
+.bf26 .bf26-btn-ghost:hover{background:#fff;color:var(--k)}
+.bf26 .bf26-btn-dark{background:var(--k);color:#fff}
+.bf26 .bf26-btn-dark:hover{background:#000;color:#fff}
+.bf26 a:focus-visible,.bf26 button:focus-visible,.bf26 summary:focus-visible,.bf26 [tabindex]:focus-visible{outline:3px solid #3264AF;outline-offset:3px}
+.bf26-arrow{width:44px;height:44px;border-radius:50%;border:1px solid #D9D5D4;background:#fff;color:var(--k);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+.bf26-arrow:hover{border-color:var(--k)}
+.bf26-arrow[disabled]{opacity:.35;cursor:default}
+.bf26-bar{position:absolute;left:0;right:0;top:0;height:4px;background:linear-gradient(90deg,var(--b) 0 50%,var(--o) 50% 100%);z-index:3}
+
+/* 02 hero */
+.bf26-hero{display:grid;grid-template-columns:45fr 55fr;min-height:420px;border-radius:16px;overflow:hidden;background:var(--n);position:relative;margin-top:16px}
+.bf26-hero-txt{color:#fff;padding:44px 48px;display:flex;flex-direction:column;justify-content:center;gap:14px;position:relative}
+.bf26-hero-logo{height:26px;width:auto;align-self:flex-start}
+.bf26-hero-kick{font-weight:800;font-size:13px;line-height:1.3;letter-spacing:.16em;color:var(--b)}
+.bf26-hero-kick span{color:var(--y)}
+.bf26-h1{font-weight:800;font-size:42px;line-height:1.08;letter-spacing:-.015em;max-width:470px;color:#fff}
+.bf26-hero-sub{font-size:16px;line-height:24px;color:#D6DAE3;max-width:440px}
+.bf26-off{display:flex;align-items:baseline;gap:10px;margin-top:2px;color:#fff}
+.bf26-off .a{font-weight:600;font-size:18px;line-height:1}
+.bf26-off .n{font-weight:800;font-size:72px;line-height:.9;color:var(--o);letter-spacing:-.03em}
+.bf26-off .o{font-weight:800;font-size:28px;line-height:1}
+.bf26-ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:4px}
+.bf26-legal{font-size:12px;line-height:1.5;color:#9AA3B5}
+.bf26-hero-art{position:relative;overflow:hidden;border-left:1px solid #222A3B;display:flex;flex-direction:column;align-items:center;padding:28px 28px 20px;gap:10px}
+.bf26-hero-art::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 60% 55% at 50% 38%,#1B2A4A 0%,var(--n) 70%)}
+.bf26-kv{position:relative;width:340px;height:auto}
+.bf26-packs{position:relative;flex:1;width:100%;display:flex;justify-content:center;align-items:flex-end}
+.bf26-packs img{height:auto;object-fit:contain;filter:drop-shadow(0 18px 24px rgba(0,0,0,.45))}
+.bf26-packs .p1{width:140px;transform:rotate(-4deg);margin-right:-16px}
+.bf26-packs .p2{width:160px;z-index:2}
+.bf26-packs .p3{width:124px;transform:rotate(5deg);margin-left:-14px}
+.bf26-packs .p4{width:84px;margin-left:8px}
+.bf26-chips{position:relative;display:flex;gap:8px;flex-wrap:wrap;justify-content:center}
+.bf26-chip{display:inline-flex;align-items:center;gap:6px;border:1px solid #2E6E8E;background:#121A2B;border-radius:8px;padding:6px 10px;color:#fff;font-weight:700;font-size:12px;line-height:1.2}
+
+/* 03 benefícios */
+.bf26-ben{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-top:24px}
+.bf26-bn{display:flex;align-items:center;gap:12px;background:var(--n);border:1px solid #2A3550;border-radius:12px;padding:14px 16px;color:#C9CFDB;font-size:12px;line-height:1.35}
+.bf26-bn svg{flex:none}
+.bf26-bn b{display:block;font-weight:800;font-size:15px;line-height:1.25;color:#fff}
+.bf26-cup{flex:none;display:flex;flex-direction:column;align-items:center;border:1.5px solid var(--b);border-radius:8px;padding:4px 8px;font-weight:800;font-size:14px;line-height:1.1;color:var(--y)}
+.bf26-cup small{font-weight:800;font-size:8px;line-height:1.2;letter-spacing:.06em;color:var(--k);background:var(--y);border-radius:3px;padding:1px 4px;margin-bottom:2px}
+.bf26-ben-note{margin-top:8px;font-size:12px;line-height:1.5;color:var(--g)}
+
+/* 04 categorias */
+.bf26-cats{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px;margin-top:20px}
+.bf26 .bf26-cat{text-decoration:none;display:flex;flex-direction:column;align-items:center;gap:10px;font-weight:500;font-size:15px;line-height:1.3;text-align:center;color:var(--k)}
+.bf26-cat-img{width:112px;height:112px;border-radius:16px;border:1px solid var(--l);box-shadow:0 4px 0 var(--o);overflow:hidden;background:#F1EFEE}
+.bf26-cat-img img{width:100%;height:100%;object-fit:cover}
+.bf26-cat:hover .bf26-cat-img{box-shadow:0 6px 0 var(--o)}
+.bf26-cat-all{background:var(--k);border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#fff;font-weight:800;font-size:15px;line-height:1.1}
+.bf26 .bf26-cat.all{font-weight:700}
+
+/* trilhos/cards de produto */
+.bf26-rail{display:grid;grid-auto-flow:column;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;padding:2px 2px 8px;scrollbar-width:thin}
+.bf26-r3{grid-auto-columns:calc((100% - 32px) / 3.12)}
+.bf26-r4{grid-auto-columns:calc((100% - 72px) / 4);gap:24px}
+.bf26 .bf26-pc{background:#fff;border:1px solid var(--l);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;scroll-snap-align:start;text-decoration:none;color:var(--k);transition:box-shadow .15s}
+.bf26-pc:hover{box-shadow:0 10px 28px rgba(35,31,32,.16)}
+.bf26-pc:hover .bf26-pcta{background:var(--o);color:var(--k)}
+.bf26-pm{position:relative;aspect-ratio:1/1;background:#F6F4F3;overflow:hidden}
+.bf26-stripe{position:absolute;right:-30px;top:-20px;width:46%;height:140%;background:var(--o);transform:skewX(-14deg)}
+.bf26-pm img{position:absolute;left:10%;right:10%;top:40px;bottom:14px;width:80%;height:calc(100% - 54px);object-fit:contain}
+.bf26-pt{position:absolute;left:10px;top:10px;display:inline-flex;align-items:center;gap:6px;background:var(--k);color:#fff;font-weight:800;font-size:10px;line-height:1;letter-spacing:.12em;border-radius:4px;padding:6px 8px;z-index:2}
+.bf26-pt i{width:7px;height:7px;background:var(--o);border-radius:1px}
+.bf26-pb{position:absolute;right:10px;top:10px;background:var(--k);color:#fff;font-weight:800;font-size:13px;line-height:1.1;border-radius:8px;padding:7px 9px;text-align:center;z-index:2}
+.bf26-pe{position:absolute;left:10px;bottom:10px;background:#fff;border:1px solid var(--l);color:var(--k);font-weight:600;font-size:11px;line-height:1;border-radius:999px;padding:6px 10px;z-index:2}
+.bf26-pbody{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.bf26-pk{font-weight:800;font-size:10px;line-height:1;letter-spacing:.14em;text-transform:uppercase;color:var(--ot)}
+.bf26-ph3{font-weight:800;font-size:20px;line-height:1.15;letter-spacing:-.01em}
+.bf26-pd{font-size:13px;line-height:1.45;color:var(--g)}
+.bf26-pcta{margin-top:auto;align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 16px;border-radius:8px;background:var(--k);color:#fff;font-weight:700;font-size:14px;transition:background .15s}
+
+/* 05 vitrine 1 */
+.bf26-v1{display:grid;grid-template-columns:300px minmax(0,1fr);gap:24px;align-items:stretch}
+.bf26-panel{background:var(--o);border-radius:16px;padding:32px 28px;display:flex;flex-direction:column;gap:14px;position:relative;overflow:hidden}
+.bf26-panel-ico{position:absolute;right:-18px;bottom:-22px;height:150px;width:auto;opacity:.22}
+.bf26-pill{display:inline-flex;align-self:flex-start;background:var(--k);color:#fff;font-weight:800;font-size:12px;line-height:1;letter-spacing:.16em;border-radius:4px;padding:7px 9px}
+.bf26-panel h2{font-weight:800;font-size:32px;line-height:1.08;letter-spacing:-.01em}
+.bf26-panel>p{font-weight:500;font-size:15px;line-height:22px}
+.bf26-cd-l{margin-bottom:6px!important;font-weight:700;font-size:12px!important;line-height:1!important;letter-spacing:.08em}
+.bf26-cd{display:flex;gap:6px}
+.bf26-cd span{display:flex;flex-direction:column;align-items:center;min-width:58px;background:var(--k);color:#fff;border-radius:8px;padding:8px 6px;font-weight:500;font-size:11px;line-height:1.2}
+.bf26-cd b{font-weight:800;font-size:22px;line-height:1.1}
+.bf26-cd-end{font-weight:800;font-size:18px;line-height:1.2;background:var(--k);color:#fff;border-radius:8px;padding:10px 12px;display:inline-block}
+.bf26-store{position:relative;margin-top:8px;font-weight:500;font-size:13px;line-height:1.4;background:rgba(255,255,255,.35);border-radius:8px;padding:10px 12px}
+.bf26-store a{font-weight:700}
+.bf26-panel .bf26-btn{margin-top:auto;position:relative}
+.bf26-v1-r{min-width:0;display:flex;flex-direction:column;gap:12px}
+.bf26-v1-r .bf26-headr{justify-content:flex-end}
+
+/* 06 mecânica */
+.bf26-mec{margin-top:72px;background:var(--n);color:#fff;position:relative;overflow:hidden}
+.bf26-mec-ico{position:absolute;right:-30px;bottom:-40px;height:260px;width:auto;opacity:.06}
+.bf26-mec .bf26-wrap{padding:72px 0;position:relative}
+.bf26-mec .bf26-eyebrow{color:var(--b)}
+.bf26-mec .bf26-h2{color:#fff}
+.bf26-mec .bf26-sub{color:#C9CFDB}
+.bf26-mech{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
+.bf26-mc{background:#fff;color:var(--k);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px;border-top:6px solid var(--o)}
+.bf26-mc h3{font-weight:700;font-size:20px;line-height:1.25}
+.bf26-mk{font-weight:800;font-size:13px;line-height:1;letter-spacing:.14em;color:var(--ot)}
+.bf26-mv{font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em}
+.bf26-md{font-size:14px;line-height:1.5;color:var(--g)}
+.bf26-calc{margin-top:24px;background:var(--n2);border:1px solid #2A3550;border-radius:12px;padding:20px 24px;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
+.bf26-calc-l{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.bf26-calc-q{font-weight:700;font-size:15px;line-height:1.4;color:var(--y)}
+.bf26-calc-v{font-weight:500;font-size:15px;line-height:1.4}
+.bf26-calc-v b{font-weight:800;font-size:26px}
+.bf26-calc-v .o{color:var(--o)}
+.bf26-calc-v .ar{color:var(--b)}
+.bf26-mec .bf26-note{color:#9AA3B5}
+
+/* 07/08 vitrines */
+.bf26-v2{margin-top:72px;background:var(--s);padding:56px 0}
+.bf26-v3{padding-top:56px}
+.bf26-tags{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+.bf26-tag{display:inline-flex;align-items:center;font-weight:700;font-size:11px;line-height:1;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:6px 8px;background:var(--k);color:#fff}
+.bf26-tag.o{background:var(--o);color:var(--k)}
+.bf26-v2 .bf26-rail,.bf26-v3 .bf26-rail{margin-top:24px}
+
+/* 09 marca */
+.bf26-brand{background:var(--o);border-radius:16px;overflow:hidden;position:relative;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:32px;padding:56px}
+.bf26-brand-ico{position:absolute;right:24px;top:24px;height:72px;width:auto;opacity:.35}
+.bf26-brand-l{display:flex;flex-direction:column;gap:16px;position:relative}
+.bf26-brand-l .bf26-eyebrow{color:var(--k);margin:0}
+.bf26-brand h2{font-weight:800;font-size:42px;line-height:1.06;letter-spacing:-.02em}
+.bf26-brand-lead{font-weight:500;font-size:18px;line-height:28px}
+.bf26-brand-txt{font-size:16px;line-height:24px}
+.bf26-brand-l .bf26-btn{align-self:flex-start;margin-top:8px}
+.bf26-steps{background:#fff;border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:16px;position:relative;align-self:center}
+.bf26-steps-k{font-weight:700;font-size:13px;line-height:1;letter-spacing:.14em;color:var(--ot)}
+.bf26-bars,.bf26-bars-l{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.bf26-bars{align-items:end}
+.bf26-bars span{background:var(--k);border-radius:4px}
+.bf26-bars span:nth-child(1){height:40px}.bf26-bars span:nth-child(2){height:64px}.bf26-bars span:nth-child(3){height:88px}
+.bf26-bars span:nth-child(4){height:112px;background:var(--o);outline:2px dashed var(--k);outline-offset:3px}
+.bf26-bars span:nth-child(5){height:136px;background:#F1EFEE;border:1.5px dashed #BDB7B5}
+.bf26-bars-l{font-weight:500;font-size:11px;line-height:1.3;color:var(--g);text-align:center}
+.bf26-bars-l b{color:var(--k)}
+.bf26-steps-f{font-weight:600;font-size:15px;line-height:1.4;border-top:1px solid var(--l);padding-top:14px}
+
+/* 09b creators */
+.bf26-crs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin-top:24px}
+.bf26 .bf26-cr{display:flex;flex-direction:column;gap:6px;text-decoration:none;color:var(--k)}
+.bf26-crv{position:relative;aspect-ratio:3/4;border-radius:14px;background:#1A2030;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.bf26-crv img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.bf26-play{width:56px;height:56px;border-radius:50%;background:var(--o);position:relative;z-index:2;transition:transform .15s}
+.bf26-play::after{content:"";position:absolute;left:22px;top:17px;border-left:16px solid var(--k);border-top:11px solid transparent;border-bottom:11px solid transparent}
+.bf26-cr:hover .bf26-play{transform:scale(1.08)}
+.bf26-crn{margin-top:6px!important;font-weight:800;font-size:15px}
+.bf26-crd{font-size:13px;line-height:1.4;color:var(--g)}
+.bf26-crq{background:var(--n);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px}
+.bf26-crq .k{font-weight:800;font-size:12px;line-height:1;letter-spacing:.14em;color:var(--b)}
+.bf26-crq .t{font-weight:800;font-size:22px;line-height:1.2;color:#fff}
+.bf26-crq .d{font-size:14px;line-height:1.5;color:#C9CFDB}
+.bf26-crq .bf26-btn{margin-top:auto}
+
+/* 10 blog */
+.bf26 .bf26-chk{display:flex;align-items:center;gap:18px;background:var(--y);border-radius:12px;padding:18px 22px;text-decoration:none;color:var(--k);margin-top:24px}
+.bf26-chki{width:56px;height:56px;border-radius:12px;background:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+.bf26-chk-t{flex:1}
+.bf26-chk-t b{display:block;font-weight:800;font-size:18px;line-height:1.3}
+.bf26-chk-t span{font-size:14px;line-height:1.4}
+.bf26-blog{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:24px}
+.bf26-post{background:#fff;border:1px solid var(--l);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.bf26-post-img{aspect-ratio:2/1;background:#F1EFEE;overflow:hidden}
+.bf26-post-img img{width:100%;height:100%;object-fit:cover}
+.bf26-post-b{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.bf26-post-c{align-self:flex-start;font-weight:700;font-size:11px;line-height:1;letter-spacing:.08em;text-transform:uppercase;border-radius:4px;padding:6px 8px;background:#F1EFEE;color:var(--g)}
+.bf26-post h3{font-weight:700;font-size:17px;line-height:1.35}
+.bf26-post h3 a{text-decoration:none}
+.bf26-post h3 a:hover{text-decoration:underline}
+.bf26-post-f{margin-top:auto;display:flex;justify-content:space-between;gap:12px;align-items:center;padding-top:8px;border-top:1px solid var(--l)}
+.bf26-post-f a{min-height:44px;display:flex;align-items:center;font-weight:700;font-size:14px}
+.bf26 .bf26-post-f a.o{font-weight:600;font-size:13px;color:var(--ot)}
+
+/* 11 SEO */
+.bf26-seo-w{border-top:1px solid var(--l);padding-top:56px}
+.bf26-seo-w .bf26-h2{font-size:30px}
+.bf26-seo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:48px;margin-top:24px;font-size:15px;line-height:24px;color:#3A3536}
+.bf26-seo p{margin-bottom:16px}
+.bf26-seo p:last-child{margin-bottom:0}
+.bf26-seo h3{margin:0 0 8px;font-weight:700;font-size:18px;line-height:1.3;color:var(--k)}
+
+/* 12 FAQ */
+.bf26-faq{display:grid;grid-template-columns:1fr 2fr;gap:48px}
+.bf26-faq details{border-bottom:1px solid var(--l)}
+.bf26-faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 4px;font-weight:600;font-size:17px;line-height:1.4;min-height:44px}
+.bf26-faq summary::-webkit-details-marker{display:none}
+.bf26-faq summary svg{flex:none;transition:transform .2s}
+.bf26-faq details[open] summary svg{transform:rotate(180deg)}
+.bf26-faq details p{margin:0 4px 20px;font-size:15px;line-height:24px;color:#3A3536}
+
+/* 13 CTA final */
+.bf26-final{padding-bottom:72px}
+.bf26-final-box{background:var(--n);border-radius:16px;padding:44px 56px;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;position:relative;overflow:hidden}
+.bf26-final-k{margin-bottom:8px!important;font-weight:800;font-size:13px;line-height:1;letter-spacing:.18em;color:var(--b)}
+.bf26-final h2{font-weight:800;font-size:34px;line-height:1.1;color:#fff}
+.bf26-final h2 span{color:var(--y)}
+.bf26-final-kv{width:230px;height:auto}
+
+/* ---------- RESPONSIVO ---------- */
+@media (max-width:1100px){
+  .bf26-r4{grid-auto-columns:calc((100% - 48px) / 3)}
+  .bf26-cats{grid-template-columns:repeat(6,112px);overflow-x:auto;padding-bottom:8px}
+}
+@media (max-width:900px){
+  .bf26-h2{font-size:28px}
+  .bf26-hero{grid-template-columns:1fr;text-align:center}
+  .bf26-hero-art{order:-1;border-left:0;padding:28px 20px 0;min-height:0}
+  .bf26-hero-txt{padding:12px 20px 24px;align-items:center}
+  .bf26 .bf26-hero-logo,.bf26-hero-kick,.bf26-hero-sub{display:none}
+  .bf26-hide-m{display:none}
+  .bf26-h1{font-size:26px;line-height:1.15}
+  .bf26-off{justify-content:center}
+  .bf26-off .n{font-size:52px}.bf26-off .o{font-size:20px}.bf26-off .a{font-size:14px}
+  .bf26-ctas{width:100%;display:grid;grid-template-columns:1.3fr 1fr}
+  .bf26-ctas .bf26-btn{padding:0 12px}
+  .bf26-legal{text-align:left}
+  .bf26-kv{width:min(300px,85%)}
+  .bf26-packs{min-height:110px}
+  .bf26-packs .p1{width:96px}.bf26-packs .p2{width:110px}.bf26-packs .p3{width:86px}.bf26-packs .p4{width:58px}
+  .bf26-chips{display:none}
+  .bf26-ben{grid-template-columns:repeat(4,78%);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}
+  .bf26-bn{scroll-snap-align:start}
+  .bf26-v1{grid-template-columns:1fr}
+  .bf26-r3,.bf26-r4{grid-auto-columns:72%}
+  .bf26-mech{grid-template-columns:1fr}
+  .bf26-mv{font-size:36px}
+  .bf26-brand{padding:32px 24px}
+  .bf26-brand h2{font-size:30px}
+  .bf26-crs{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+  .bf26-chk{flex-wrap:wrap}
+  .bf26-blog{grid-template-columns:1fr}
+  .bf26-seo{grid-template-columns:1fr;gap:16px}
+  .bf26-faq{grid-template-columns:1fr;gap:16px}
+  .bf26-final-box{padding:32px 24px;flex-direction:column;align-items:flex-start}
+  .bf26-final h2{font-size:26px}
+  .bf26-final-kv{width:200px}
+}
+@media (max-width:520px){
+  .bf26-sec{padding-top:48px}
+  .bf26-mec,.bf26-v2{margin-top:48px}
+  .bf26-mec .bf26-wrap{padding:48px 0}
+  .bf26-r3,.bf26-r4{grid-auto-columns:78%}
+  .bf26-headr .bf26-arrow{display:none}
+  .bf26-calc-v b{font-size:22px}
+  .bf26-chk .bf26-btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){.bf26 *{transition:none!important;scroll-behavior:auto!important}}
+</style>
+
+<div class="bf26">
+
+<!-- 02 HERO -->
+<section aria-labelledby="bf26-h1">
+<div class="bf26-wrap bf26-hero">
+  <span class="bf26-bar" aria-hidden="true"></span>
+  <div class="bf26-hero-txt">
+    <img class="bf26-hero-logo" src="assets/logo-333obra-branco.png" alt="333OBRA" width="110" height="26">
+    <p class="bf26-hero-kick">BLACK FRIDAY 2026 · <span>MELHOR PREÇO O ANO TODO</span></p>
+    <h1 id="bf26-h1" class="bf26-h1">A Black chegou. É hora de fazer a obra avançar.</h1>
+    <p class="bf26-hero-sub">O preço da 333OBRA já é bom o ano inteiro. Na Black, a gente deixa o melhor preço ainda melhor. Compara aí!</p>
+    <p class="bf26-off"><span class="a">ATÉ</span><span class="n">15%</span><span class="o">OFF</span></p>
+    <div class="bf26-ctas">
+      <a href="#ofertas" class="bf26-btn bf26-btn-pri">VER OFERTAS <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#mecanica" class="bf26-btn bf26-btn-ghost"><span class="bf26-hide-m">ENTENDER AS&nbsp;</span>CONDIÇÕES</a>
+    </div>
+    <p class="bf26-legal">15% OFF em rejuntes; até 10% OFF nas demais categorias, em pedidos a partir de R$ 1.000. Consulte produtos participantes, condições, disponibilidade e regulamento.</p>
+  </div>
+  <div class="bf26-hero-art">
+    <img class="bf26-kv" src="assets/kv-black-friday-2026-compara-ai-333obra.png" alt="Melhor preço o ano todo! Compara aí! Black 333OBRA" width="970" height="532" fetchpriority="high">
+    <div class="bf26-packs" aria-hidden="true">
+      <img class="p1" src="assets/hero-packshot-cimento-votoran-50kg-lateral.svg" alt="">
+      <img class="p2" src="assets/hero-packshot-cimento-votoran-50kg-frente.svg" alt="">
+      <img class="p3" src="assets/hero-packshot-argamassa-votomassa.svg" alt="">
+      <img class="p4" src="assets/hero-packshot-rejunte.svg" alt="">
+    </div>
+    <!-- VALIDAR: benefícios (Bloqueio 5) -->
+    <div class="bf26-chips">
+      <span class="bf26-chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg>Frete grátis*</span>
+      <span class="bf26-chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/></svg>Entrega em até 24h*</span>
+      <span class="bf26-chip"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg>Cobrimos o melhor preço do Cimento Votoran*</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 03 BENEFÍCIOS — VALIDAR: regras de cada benefício (Bloqueio 5) e cupom BITELO10 (Bloqueio 2) -->
+<section aria-label="Benefícios da Black Friday 333OBRA">
+<div class="bf26-wrap">
+  <div class="bf26-ben">
+    <div class="bf26-bn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg><div><b>Frete grátis*</b>Em pedidos e regiões participantes</div></div>
+    <div class="bf26-bn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><path d="M12 7v3l2 1.5"/></svg><div><b>Entrega em até 24h*</b>Conforme loja e região</div></div>
+    <div class="bf26-bn"><span class="bf26-cup"><small>USE O CUPOM</small>BITELO10</span><div><b>Cupom do Bitelo*</b>Regras de uso no regulamento</div></div>
+    <div class="bf26-bn"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#4EBFEB" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><div><b>Cobrimos o melhor preço*</b>do Cimento Votoran</div></div>
+  </div>
+  <p class="bf26-ben-note">*Condições, regiões, lojistas e produtos participantes no <a href="#VALIDAR-URL-regulamento">regulamento</a>.</p>
+</div>
+</section>
+
+<!-- 04 CATEGORIAS -->
+<section aria-labelledby="bf26-cat-t" class="bf26-sec">
+<div class="bf26-wrap">
+  <h2 id="bf26-cat-t" class="bf26-h2" style="font-size:24px">Ofertas por categoria</h2>
+  <div class="bf26-cats">
+<a href="https://www.333obra.com.br/todos-os-produtos/cimento.html" class="bf26-cat"><span class="bf26-cat-img"><img src="assets/categoria-cimentos-black-friday.svg" alt="" width="112" height="112" loading="lazy"></span>Cimentos</a>
+<a href="#VALIDAR-URL-argamassas" class="bf26-cat"><span class="bf26-cat-img"><img src="assets/categoria-argamassas-black-friday.svg" alt="" width="112" height="112" loading="lazy"></span>Argamassas</a>
+<a href="#VALIDAR-URL-rejuntes" class="bf26-cat"><span class="bf26-cat-img"><img src="assets/categoria-rejuntes-black-friday.svg" alt="" width="112" height="112" loading="lazy"></span>Rejuntes</a>
+<a href="#VALIDAR-URL-blocos-e-tijolos" class="bf26-cat"><span class="bf26-cat-img"><img src="assets/categoria-blocos-e-tijolos-black-friday.svg" alt="" width="112" height="112" loading="lazy"></span>Blocos e tijolos</a>
+<a href="#VALIDAR-URL-areia-e-agregados" class="bf26-cat"><span class="bf26-cat-img"><img src="assets/categoria-areia-e-agregados-black-friday.svg" alt="" width="112" height="112" loading="lazy"></span>Areia e agregados</a>
+<a href="#ofertas" class="bf26-cat all"><span class="bf26-cat-img bf26-cat-all">BLACK<br>FRIDAY<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#EB6626" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>Ver todas as ofertas</a>
+  </div>
+</div>
+</section>
+
+<!-- 05 VITRINE 1 — painel laranja + contador -->
+<section id="ofertas" aria-labelledby="bf26-v1" class="bf26-sec">
+<div class="bf26-wrap bf26-v1">
+  <div class="bf26-panel">
+    <img class="bf26-panel-ico" src="assets/icone-colher-333obra.png" alt="" aria-hidden="true">
+    <span class="bf26-pill">BLACK FRIDAY</span>
+    <h2 id="bf26-v1">Ofertas para fazer a obra avançar</h2>
+    <p>Compare produtos disponíveis para a sua região e encontre a melhor opção para a próxima etapa.</p>
+    <div class="bf26-cdw" data-bf26-end="2026-11-30T23:59:59-03:00">
+      <p class="bf26-cd-l">TERMINA EM</p>
+      <div class="bf26-cd" role="timer" aria-live="off" aria-label="Tempo restante da Black Friday">
+        <span><b data-bf26-d>--</b>dias</span><span><b data-bf26-h>--</b>horas</span><span><b data-bf26-m>--</b>min</span>
+      </div>
+    </div>
+    <!-- VALIDAR: cidade da loja pode ser preenchida via JS do seletor de loja do tema -->
+    <p class="bf26-store">Ofertas da loja da sua região<br><a href="#VALIDAR-URL-escolher-loja">Trocar de loja</a></p>
+    <a href="#VALIDAR-URL-todas-ofertas-black-friday" class="bf26-btn bf26-btn-dark">Ver todas →</a>
+  </div>
+  <div class="bf26-v1-r">
+    <div class="bf26-headr"><button type="button" class="bf26-arrow" data-bf26-prev="bf26-r1" aria-label="Produtos anteriores"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><button type="button" class="bf26-arrow" data-bf26-next="bf26-r1" aria-label="Próximos produtos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+<!-- VITRINE: cards fixos. Para usar widget dinâmico (Insider/Magento), substitua o conteúdo de #bf26-r1 -->
+<div id="bf26-r1" class="bf26-rail bf26-r3" role="list" aria-label="Ofertas Black Friday por categoria" tabindex="0">
+<a href="https://www.333obra.com.br/todos-os-produtos/cimento.html" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/oferta-cimentos-black-friday-333obra.svg" alt="Sacos de cimento em oferta na Black Friday 333OBRA" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">ATÉ 10% OFF</span>
+    <span class="bf26-pe">Etapa: Estrutura</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Categoria em oferta</p>
+    <h3 class="bf26-ph3">Cimentos</h3>
+    <p class="bf26-pd">1ª compra de cimento com condição exclusiva.</p>
+    <span class="bf26-pcta">Ver ofertas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-argamassas" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/oferta-argamassas-black-friday-333obra.svg" alt="Argamassas em oferta na Black Friday 333OBRA" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">ATÉ 10% OFF</span>
+    <span class="bf26-pe">Etapa: Revestimento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Categoria em oferta</p>
+    <h3 class="bf26-ph3">Argamassas</h3>
+    <p class="bf26-pd">Para assentar e revestir com economia.</p>
+    <span class="bf26-pcta">Ver ofertas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-rejuntes" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/oferta-rejuntes-black-friday-333obra.svg" alt="Rejuntes com 15% OFF na Black Friday 333OBRA" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">15% OFF</span>
+    <span class="bf26-pe">Etapa: Acabamento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Categoria em oferta</p>
+    <h3 class="bf26-ph3">Rejuntes</h3>
+    <p class="bf26-pd">Condição especial para o acabamento.</p>
+    <span class="bf26-pcta">Ver ofertas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-blocos-e-tijolos" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/oferta-blocos-e-tijolos-black-friday-333obra.svg" alt="Blocos e tijolos em oferta na Black Friday 333OBRA" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">ATÉ 10% OFF</span>
+    <span class="bf26-pe">Etapa: Alvenaria</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Categoria em oferta</p>
+    <h3 class="bf26-ph3">Blocos e tijolos</h3>
+    <p class="bf26-pd">Levante as paredes gastando menos.</p>
+    <span class="bf26-pcta">Ver ofertas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-areia-e-agregados" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/oferta-areia-e-agregados-black-friday-333obra.svg" alt="Areia e agregados em oferta na Black Friday 333OBRA" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">ATÉ 10% OFF</span>
+    <span class="bf26-pe">Etapa: Estrutura</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Categoria em oferta</p>
+    <h3 class="bf26-ph3">Areia e agregados</h3>
+    <p class="bf26-pd">Areia, pedra e pó de pedra para a obra.</p>
+    <span class="bf26-pcta">Ver ofertas <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+</div>
+  </div>
+</div>
+</section>
+
+<!-- 06 MECÂNICA — VALIDAR: regra de desconto (Bloqueio 1) -->
+<section id="mecanica" aria-labelledby="bf26-mec-t" class="bf26-mec">
+  <span class="bf26-bar" aria-hidden="true"></span>
+  <img class="bf26-mec-ico" src="assets/icone-colher-333obra.png" alt="" aria-hidden="true">
+  <div class="bf26-wrap">
+    <p class="bf26-eyebrow">COMO FUNCIONA</p>
+    <h2 id="bf26-mec-t" class="bf26-h2">Como aproveitar a Black da 333OBRA</h2>
+    <p class="bf26-sub">Cada categoria tem uma condição. O desconto aparece no pedido, antes do pagamento.</p>
+    <div class="bf26-mech">
+      <article class="bf26-mc"><p class="bf26-mk">01 · CIMENTOS</p><h3>Só na 1ª compra de cimento.</h3><p class="bf26-mv">Até 10% OFF</p><p class="bf26-md">Na primeira compra de cimento na 333OBRA, em pedidos a partir de R$ 1.000.</p></article>
+      <article class="bf26-mc"><p class="bf26-mk">02 · DEMAIS CATEGORIAS</p><h3>Em qualquer compra.</h3><p class="bf26-mv">Até 10% OFF</p><p class="bf26-md">Argamassas, blocos, tijolos, areia e demais categorias, em pedidos a partir de R$ 1.000.</p></article>
+      <article class="bf26-mc"><p class="bf26-mk">03 · REJUNTES</p><h3>Em qualquer pedido.</h3><p class="bf26-mv">15% OFF</p><p class="bf26-md">Desconto em rejuntes participantes, sem valor mínimo de pedido.</p></article>
+    </div>
+    <div class="bf26-calc">
+      <div class="bf26-calc-l">
+        <p class="bf26-calc-q">Quanto você economizaria?</p>
+        <p class="bf26-calc-v"><b>R$ 1.000</b> em compras <span class="ar" aria-hidden="true">→</span> <b class="o">até R$ 100 OFF</b></p>
+      </div>
+      <a href="#VALIDAR-URL-regulamento" class="bf26-btn bf26-btn-ghost">Ver regulamento</a>
+    </div>
+    <!-- VALIDAR: cumulatividade de cupons (Bloqueio 2) -->
+    <p class="bf26-note">Exemplo com desconto de 10%. Cupons e cumulatividade conforme regulamento.</p>
+  </div>
+</section>
+
+<!-- 07 VITRINE 2 — mais comprados -->
+<section aria-labelledby="bf26-v2" class="bf26-v2">
+<div class="bf26-wrap">
+  <div class="bf26-head">
+    <div><div class="bf26-tags"><span class="bf26-tag">Black Friday</span></div><h2 id="bf26-v2" class="bf26-h2">Mais comprados da 333OBRA</h2><p class="bf26-sub">Os materiais que mais saem na 333OBRA, agora na Black Friday.</p></div>
+    <div class="bf26-headr"><a href="#VALIDAR-URL-mais-comprados" class="bf26-link">Ver todos</a><button type="button" class="bf26-arrow" data-bf26-prev="bf26-r2" aria-label="Produtos anteriores"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><button type="button" class="bf26-arrow" data-bf26-next="bf26-r2" aria-label="Próximos produtos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+  </div>
+<!-- VITRINE: cards fixos. Para usar widget dinâmico (Insider/Magento), substitua o conteúdo de #bf26-r2 -->
+<div id="bf26-r2" class="bf26-rail bf26-r4" role="list" aria-label="Mais comprados da 333OBRA" tabindex="0">
+<a href="#VALIDAR-URL-cimento-cp-ii-f32" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/cimento-cp-ii-f32-votoran-50kg.svg" alt="Cimento CP-II F32 Todas as Obras Votoran 50 kg" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">BLACK FRIDAY</span>
+    <span class="bf26-pe">Etapa: Estrutura</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Mais comprado</p>
+    <h3 class="bf26-ph3">Cimento CP-II F32 Votoran 50 kg</h3>
+    <p class="bf26-pd">O cimento que mais sai na 333OBRA.</p>
+    <span class="bf26-pcta">Ver preço na sua região <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-bloco-ceramico" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/bloco-ceramico-vedacao-11-5x14x24.svg" alt="Bloco cerâmico de vedação 11,5 x 14 x 24 cm" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">BLACK FRIDAY</span>
+    <span class="bf26-pe">Etapa: Alvenaria</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Mais comprado</p>
+    <h3 class="bf26-ph3">Bloco cerâmico de vedação</h3>
+    <p class="bf26-pd">Para as paredes da sua obra.</p>
+    <span class="bf26-pcta">Ver preço na sua região <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-areia-media" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/saco-areia-media-20kg.svg" alt="Saco de areia média 20 kg" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">BLACK FRIDAY</span>
+    <span class="bf26-pe">Etapa: Estrutura</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Mais comprado</p>
+    <h3 class="bf26-ph3">Areia média 20 kg</h3>
+    <p class="bf26-pd">Saco prático para obra e reforma.</p>
+    <span class="bf26-pcta">Ver preço na sua região <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="https://www.333obra.com.br/p/argamassa-votomassa-aciii-cinza-20-kg.html" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/argamassa-votomassa-aciii-20kg.svg" alt="Argamassa flexível Votomassa ACIII interna e externa 20 kg" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">BLACK FRIDAY</span>
+    <span class="bf26-pe">Etapa: Revestimento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Mais comprado</p>
+    <h3 class="bf26-ph3">Argamassa Votomassa ACIII 20 kg</h3>
+    <p class="bf26-pd">Interna e externa, para porcelanato.</p>
+    <span class="bf26-pcta">Ver preço na sua região <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-tijolo-baiano" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/tijolo-baiano-ceramico-11-5x14x24.svg" alt="Tijolo baiano cerâmico 11,5 x 14 x 24 cm" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">BLACK FRIDAY</span>
+    <span class="bf26-pe">Etapa: Alvenaria</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Mais comprado</p>
+    <h3 class="bf26-ph3">Tijolo baiano cerâmico</h3>
+    <p class="bf26-pd">Clássico da alvenaria brasileira.</p>
+    <span class="bf26-pcta">Ver preço na sua região <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- 08 VITRINE 3 — rejuntes -->
+<section aria-labelledby="bf26-v3" class="bf26-v3">
+<div class="bf26-wrap">
+  <div class="bf26-head">
+    <div><div class="bf26-tags"><span class="bf26-tag">Black Friday</span><span class="bf26-tag o">15% OFF em qualquer pedido</span></div><h2 id="bf26-v3" class="bf26-h2">Rejuntes com condição especial</h2><p class="bf26-sub">15% OFF em qualquer pedido com rejuntes. Escolha o tipo certo para cada ambiente.</p></div>
+    <div class="bf26-headr"><a href="#VALIDAR-URL-rejuntes" class="bf26-link">Ver todos os rejuntes</a><button type="button" class="bf26-arrow" data-bf26-prev="bf26-r3" aria-label="Produtos anteriores"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button><button type="button" class="bf26-arrow" data-bf26-next="bf26-r3" aria-label="Próximos produtos"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button></div>
+  </div>
+<!-- VITRINE: cards fixos. Para usar widget dinâmico (Insider/Magento), substitua o conteúdo de #bf26-r3 -->
+<div id="bf26-r3" class="bf26-rail bf26-r4" role="list" aria-label="Rejuntes em oferta" tabindex="0">
+<a href="#VALIDAR-URL-rejuntes-banheiro" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/rejunte-para-banheiro.svg" alt="Rejunte para banheiro com 15% OFF" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">15% OFF</span>
+    <span class="bf26-pe">Etapa: Acabamento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Rejunte</p>
+    <h3 class="bf26-ph3">Rejunte para banheiro</h3>
+    <p class="bf26-pd">Resistente à umidade do dia a dia.</p>
+    <span class="bf26-pcta">Ver rejuntes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-rejuntes-cozinha" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/rejunte-para-cozinha.svg" alt="Rejunte para cozinha com 15% OFF" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">15% OFF</span>
+    <span class="bf26-pe">Etapa: Acabamento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Rejunte</p>
+    <h3 class="bf26-ph3">Rejunte para cozinha</h3>
+    <p class="bf26-pd">Fácil de limpar, perto do fogão e da pia.</p>
+    <span class="bf26-pcta">Ver rejuntes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-rejuntes-area-externa" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/rejunte-para-area-externa.svg" alt="Rejunte para área externa com 15% OFF" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">15% OFF</span>
+    <span class="bf26-pe">Etapa: Acabamento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Rejunte</p>
+    <h3 class="bf26-ph3">Rejunte para área externa</h3>
+    <p class="bf26-pd">Para quintal, varanda e fachada.</p>
+    <span class="bf26-pcta">Ver rejuntes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+<a href="#VALIDAR-URL-rejuntes-porcelanato" class="bf26-pc" role="listitem">
+  <div class="bf26-pm">
+    <span class="bf26-stripe" aria-hidden="true"></span>
+    <img src="assets/rejunte-para-porcelanato.svg" alt="Rejunte para porcelanato com 15% OFF" width="400" height="400" loading="lazy" decoding="async">
+    <span class="bf26-pt"><i></i>BLACK FRIDAY</span>
+    <span class="bf26-pb">15% OFF</span>
+    <span class="bf26-pe">Etapa: Acabamento</span>
+  </div>
+  <div class="bf26-pbody">
+    <p class="bf26-pk">Rejunte</p>
+    <h3 class="bf26-ph3">Rejunte para porcelanato</h3>
+    <p class="bf26-pd">Junta fina com acabamento uniforme.</p>
+    <span class="bf26-pcta">Ver rejuntes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+  </div>
+</a>
+</div>
+</div>
+</section>
+
+<!-- 09 BLOCO DE MARCA -->
+<section aria-labelledby="bf26-marca-t" class="bf26-sec">
+<div class="bf26-wrap bf26-brand">
+  <img class="bf26-brand-ico" src="assets/icone-colher-333obra.png" alt="" aria-hidden="true">
+  <div class="bf26-brand-l">
+    <p class="bf26-eyebrow">MELHOR PREÇO O ANO INTEIRO</p>
+    <h2 id="bf26-marca-t">Na Black Friday, todo mundo quer parecer barato. A 333OBRA já é.</h2>
+    <p class="bf26-brand-lead">Se o preço já é bom o ano inteiro, na Black a gente deixa o melhor preço ainda melhor. E o que você economiza vira a próxima etapa da obra.</p>
+    <p class="bf26-brand-txt">Na 333OBRA, você compara ofertas de vários lojistas da sua região e escolhe a melhor.</p>
+    <a href="#ofertas" class="bf26-btn bf26-btn-dark">Compara aí <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+  </div>
+  <div class="bf26-steps" role="img" aria-label="Ilustração: a economia vira uma etapa a mais da obra">
+    <p class="bf26-steps-k">SUA OBRA, ETAPA POR ETAPA</p>
+    <div class="bf26-bars"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="bf26-bars-l"><span>Fundação</span><span>Estrutura</span><span>Alvenaria</span><b>Reboco</b><span>Acabamento</span></div>
+    <p class="bf26-steps-f">Tem Black para chamar atenção. E tem Black para fazer a obra andar.</p>
+  </div>
+</div>
+</section>
+
+<!-- 09b CREATORS — VALIDAR: links dos vídeos e uso de imagem conforme contrato -->
+<section aria-labelledby="bf26-cr-t" class="bf26-sec">
+<div class="bf26-wrap">
+  <div class="bf26-head">
+    <div><p class="bf26-eyebrow">NA OBRA COM QUEM ENTENDE</p><h2 id="bf26-cr-t" class="bf26-h2">Dicas e ofertas com Gustavo, Juninho e Bitelo</h2><p class="bf26-sub">Planejamento da obra, economia na prática e as ofertas da Black, direto de quem vive a obra.</p></div>
+    <a href="#VALIDAR-URL-instagram-333obra" class="bf26-link">Siga a 333OBRA →</a>
+  </div>
+  <div class="bf26-crs">
+<a href="#VALIDAR-URL-video-gustavo" class="bf26-cr" target="_blank" rel="noopener">
+  <span class="bf26-crv"><img src="assets/creator-gustavo-azulejista-rejunte.svg" alt="" loading="lazy"><span class="bf26-play" aria-hidden="true"></span></span>
+  <span class="bf26-crn">Gustavo Azulejista</span><span class="bf26-crd">Como escolher o rejunte certo para cada ambiente</span><span class="bf26-sr"> (assistir vídeo, abre em nova aba)</span>
+</a>
+<a href="#VALIDAR-URL-video-juninho" class="bf26-cr" target="_blank" rel="noopener">
+  <span class="bf26-crv"><img src="assets/creator-juninho-lista-da-obra.svg" alt="" loading="lazy"><span class="bf26-play" aria-hidden="true"></span></span>
+  <span class="bf26-crn">Juninho</span><span class="bf26-crd">Lista da obra: o que vale antecipar na Black</span><span class="bf26-sr"> (assistir vídeo, abre em nova aba)</span>
+</a>
+<a href="#VALIDAR-URL-video-bitelo" class="bf26-cr" target="_blank" rel="noopener">
+  <span class="bf26-crv"><img src="assets/creator-bitelo-cupom-bitelo10.svg" alt="" loading="lazy"><span class="bf26-play" aria-hidden="true"></span></span>
+  <span class="bf26-crn">Bitelo</span><span class="bf26-crd">Use o cupom BITELO10* e compara aí</span><span class="bf26-sr"> (assistir vídeo, abre em nova aba)</span>
+</a>
+    <div class="bf26-crq"><p class="k">ENQUETE</p><p class="t">Quanto você economizaria na sua obra?</p><p class="d">A cada R$ 1.000 em compras, até R$ 100 de volta no bolso.</p><a href="#mecanica" class="bf26-btn bf26-btn-pri">Fazer as contas</a></div>
+  </div>
+</div>
+</section>
+
+<!-- 10 BLOG -->
+<section aria-labelledby="bf26-g-t" class="bf26-sec">
+<div class="bf26-wrap">
+  <div class="bf26-head">
+    <div><p class="bf26-eyebrow">BLOG 333OBRA</p><h2 id="bf26-g-t" class="bf26-h2">Antes de comprar, tire suas dúvidas</h2><p class="bf26-sub">Conteúdos do Blog 333OBRA para escolher o material certo e aproveitar melhor a Black Friday.</p></div>
+    <a href="https://www.333obra.com.br/blog/" class="bf26-link">Ver todos os posts →</a>
+  </div>
+  <a href="#VALIDAR-URL-checklist-da-obra" class="bf26-chk"><span class="bf26-chki" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8l1.5 1.5L13 7M9 13l1.5 1.5L13 12M9 18h6"/></svg></span><span class="bf26-chk-t"><b>Checklist completo da obra</b><span>Lista de materiais por etapa para planejar o que vale antecipar na Black.</span></span><span class="bf26-btn bf26-btn-dark">Baixar checklist</span></a>
+  <div class="bf26-blog">
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-quantos-sacos-de-cimento-por-m2.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Cimento</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/quantos-sacos-de-cimento-por-metro-quadrado.html">Quantos sacos de cimento por m² eu preciso para cada uso?</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/quantos-sacos-de-cimento-por-metro-quadrado.html" aria-label="Ler no blog: Quantos sacos de cimento por m² eu preciso para cada uso?">Ler no blog →</a><a href="https://www.333obra.com.br/todos-os-produtos/cimento.html" class="o">Cimentos em oferta</a></div>
+  </div>
+</article>
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-qual-a-melhor-marca-de-cimento.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Cimento</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/qual-a-melhor-marca-de-cimento.html">Qual a melhor marca de cimento? Descubra agora!</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/qual-a-melhor-marca-de-cimento.html" aria-label="Ler no blog: Qual a melhor marca de cimento? Descubra agora!">Ler no blog →</a><a href="https://www.333obra.com.br/todos-os-produtos/cimento.html" class="o">Cimentos em oferta</a></div>
+  </div>
+</article>
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-rejunte-para-banheiro.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Rejunte</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/rejunte-para-banheiro.html">Qual o melhor rejunte para banheiro? Conheça as opções!</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/rejunte-para-banheiro.html" aria-label="Ler no blog: Qual o melhor rejunte para banheiro? Conheça as opções!">Ler no blog →</a><a href="#VALIDAR-URL-rejuntes" class="o">Rejuntes em oferta</a></div>
+  </div>
+</article>
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-argamassa-polimerica.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Argamassa</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/argamassa-polimerica.html">Para que serve a argamassa polimérica?</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/argamassa-polimerica.html" aria-label="Ler no blog: Para que serve a argamassa polimérica?">Ler no blog →</a><a href="#VALIDAR-URL-argamassas" class="o">Argamassas em oferta</a></div>
+  </div>
+</article>
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-blocos-de-concreto.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Blocos</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/blocos-de-concreto.html">O que são blocos de concreto? Conheça valores e aplicações</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/blocos-de-concreto.html" aria-label="Ler no blog: O que são blocos de concreto? Conheça valores e aplicações">Ler no blog →</a><a href="#VALIDAR-URL-blocos-e-tijolos" class="o">Blocos em oferta</a></div>
+  </div>
+</article>
+<article class="bf26-post">
+  <div class="bf26-post-img"><img src="assets/blog-po-de-pedra.svg" alt="" width="600" height="300" loading="lazy"></div>
+  <div class="bf26-post-b">
+    <span class="bf26-post-c">Agregados</span>
+    <h3><a href="https://www.333obra.com.br/blog/post/po-de-pedra.html">O que é pó de pedra e quando ele é usado?</a></h3>
+    <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/po-de-pedra.html" aria-label="Ler no blog: O que é pó de pedra e quando ele é usado?">Ler no blog →</a><a href="#VALIDAR-URL-areia-e-agregados" class="o">Agregados em oferta</a></div>
+  </div>
+</article>
+  </div>
+</div>
+</section>
+
+<!-- 11 SEO / GEO -->
+<section aria-labelledby="bf26-seo-t" class="bf26-sec">
+<div class="bf26-wrap bf26-seo-w">
+  <h2 id="bf26-seo-t" class="bf26-h2">Black Friday de material de construção na 333OBRA</h2>
+  <div class="bf26-seo">
+    <div>
+      <p><b>A Black Friday 2026 da 333OBRA acontece em novembro, com a Black Week de 22 a 27/11 e a Cyber Monday em 30/11.</b> Ela reúne ofertas de cimento, argamassa, rejunte, blocos, tijolos, areia e agregados, com condições diferentes por categoria.</p>
+      <h3>Como encontrar material de construção barato na Black Friday?</h3>
+      <p>Monte a lista por etapa da obra, escolha sua loja para ver o que está disponível na sua região e confira a condição de cada categoria antes de fechar o pedido. Veja a <a href="#VALIDAR-URL-lista-de-materiais">lista de materiais de construção</a>.</p>
+      <h3>Tem cimento em promoção?</h3>
+      <p>Sim. Na primeira compra de cimento, o desconto é de até 10% em pedidos a partir de R$ 1.000. Veja <a href="https://www.333obra.com.br/todos-os-produtos/cimento.html">cimentos</a> e o guia <a href="https://www.333obra.com.br/blog/post/qual-a-melhor-marca-de-cimento.html">como escolher cimento</a>.</p>
+    </div>
+    <div>
+      <h3>Argamassa, rejunte, blocos e tijolos</h3>
+      <p>Rejuntes têm 15% OFF em qualquer pedido. Argamassas, blocos, tijolos e demais categorias têm até 10% OFF em pedidos a partir de R$ 1.000. Disponibilidade, preço e entrega variam por região e lojista.</p>
+      <h3>Como comprar material de construção online na 333OBRA?</h3>
+      <p>Escolha a loja, adicione os produtos ao carrinho e confira preço final, frete e prazo antes de pagar. Também é possível mandar sua lista pelo <a href="#VALIDAR-URL-whatsapp">WhatsApp</a> e receber um orçamento.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- 12 FAQ (com JSON-LD FAQPage abaixo — manter textos idênticos) -->
+<section aria-labelledby="bf26-faq-t" class="bf26-sec">
+<div class="bf26-wrap bf26-faq">
+  <div><h2 id="bf26-faq-t" class="bf26-h2">Perguntas frequentes</h2><p class="bf26-sub">Tudo sobre a Black Friday da 333OBRA. Não achou? <a href="#VALIDAR-URL-whatsapp">Fale com a gente pelo WhatsApp</a>.</p></div>
+  <div>
+<details open><!-- VALIDAR: data e hora exata de início das ofertas --><summary>Quando começa a Black Friday da 333OBRA?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>A campanha começa em 1º de novembro. As ofertas ficam mais fortes na Black Week, de 22 a 27/11, e a última chance é a Cyber Monday, em 30/11.</p></details>
+<details><summary>Quais produtos participam da Black Friday?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>Cimentos, argamassas, rejuntes, blocos, tijolos, areia e agregados participantes. Valem os produtos com o selo Black Friday na loja escolhida.</p></details>
+<details><summary>Como funciona a oferta para primeira compra de cimento?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>Na primeira compra de cimento na 333OBRA, o desconto é de até 10% em pedidos a partir de R$ 1.000. A regra completa está no regulamento.</p></details>
+<details><summary>Como consultar produtos disponíveis para minha região?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>Clique em “Escolher loja” no topo da página e selecione sua cidade. As ofertas passam a mostrar só o que está disponível nessa loja.</p></details>
+<details><!-- VALIDAR: regra de cumulatividade BITELO10 / CIMENTO10 com descontos BF (Bloqueio 2) --><summary>Posso usar mais de um cupom?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>As regras de uso dos cupons e a combinação com os descontos da Black Friday estão no regulamento da campanha.</p></details>
+<details><!-- VALIDAR: desconto vale para todos os lojistas? (Bloqueio 6) --><summary>As condições são iguais para todos os sellers?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>Preço, estoque, frete e prazo podem variar por lojista e região. Confira na página do produto e no carrinho.</p></details>
+<details><summary>Como conferir o preço final e a entrega?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>O preço final, com desconto, frete e prazo, aparece no carrinho antes do pagamento, depois de informar o CEP.</p></details>
+<details><!-- VALIDAR: horário de encerramento --><summary>Até quando vão as ofertas?<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#231F20" stroke-width="2" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></summary><p>Até a Cyber Monday, 30 de novembro, ou enquanto durarem os estoques.</p></details>
+  </div>
+</div>
+</section>
+
+<!-- 13 CTA FINAL -->
+<section aria-labelledby="bf26-cta-t" class="bf26-sec bf26-final">
+<div class="bf26-wrap bf26-final-box">
+  <span class="bf26-bar" aria-hidden="true"></span>
+  <div><p class="bf26-final-k">BLACK WEEK 22–27/11 · CYBER MONDAY 30/11</p><h2 id="bf26-cta-t">Melhor preço o ano inteiro.<br><span>Na Black, compara aí.</span></h2></div>
+  <img class="bf26-final-kv" src="assets/kv-black-friday-2026-compara-ai-333obra.png" alt="" aria-hidden="true" width="230" height="126" loading="lazy">
+  <a href="#ofertas" class="bf26-btn bf26-btn-pri">VER OFERTAS →</a>
+</div>
+</section>
+
+</div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Quando começa a Black Friday da 333OBRA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A campanha começa em 1º de novembro. As ofertas ficam mais fortes na Black Week, de 22 a 27/11, e a última chance é a Cyber Monday, em 30/11."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quais produtos participam da Black Friday?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cimentos, argamassas, rejuntes, blocos, tijolos, areia e agregados participantes. Valem os produtos com o selo Black Friday na loja escolhida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como funciona a oferta para primeira compra de cimento?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Na primeira compra de cimento na 333OBRA, o desconto é de até 10% em pedidos a partir de R$ 1.000. A regra completa está no regulamento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como consultar produtos disponíveis para minha região?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Clique em “Escolher loja” no topo da página e selecione sua cidade. As ofertas passam a mostrar só o que está disponível nessa loja."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Posso usar mais de um cupom?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "As regras de uso dos cupons e a combinação com os descontos da Black Friday estão no regulamento da campanha."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "As condições são iguais para todos os sellers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Preço, estoque, frete e prazo podem variar por lojista e região. Confira na página do produto e no carrinho."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Como conferir o preço final e a entrega?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "O preço final, com desconto, frete e prazo, aparece no carrinho antes do pagamento, depois de informar o CEP."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Até quando vão as ofertas?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Até a Cyber Monday, 30 de novembro, ou enquanto durarem os estoques."
+      }
+    }
+  ]
+}
+</script>
+
+<script>
+(function(){
+  /* Setas dos carrosséis */
+  function step(r){var c=r.querySelector('.bf26-pc');return c?c.getBoundingClientRect().width+parseFloat(getComputedStyle(r).columnGap||16):r.clientWidth*.8;}
+  function sync(r){
+    var p=document.querySelectorAll('[data-bf26-prev="'+r.id+'"]'),n=document.querySelectorAll('[data-bf26-next="'+r.id+'"]');
+    var atS=r.scrollLeft<=2,atE=r.scrollLeft+r.clientWidth>=r.scrollWidth-2;
+    p.forEach(function(b){b.disabled=atS;});n.forEach(function(b){b.disabled=atE;});
+  }
+  document.querySelectorAll('.bf26-rail').forEach(function(r){r.addEventListener('scroll',function(){sync(r);},{passive:true});sync(r);});
+  window.addEventListener('resize',function(){document.querySelectorAll('.bf26-rail').forEach(sync);});
+  document.addEventListener('click',function(ev){
+    var b=ev.target.closest('[data-bf26-prev],[data-bf26-next]');if(!b)return;
+    var id=b.getAttribute('data-bf26-prev')||b.getAttribute('data-bf26-next'),r=document.getElementById(id);if(!r)return;
+    r.scrollBy({left:(b.hasAttribute('data-bf26-prev')?-1:1)*step(r),behavior:'smooth'});
+  });
+
+  /* Contador regressivo (horário de Brasília) */
+  var w=document.querySelector('.bf26-cdw');if(!w)return;
+  var end=new Date(w.getAttribute('data-bf26-end')).getTime();
+  var d=w.querySelector('[data-bf26-d]'),h=w.querySelector('[data-bf26-h]'),m=w.querySelector('[data-bf26-m]');
+  function pad(x){return (x<10?'0':'')+x;}
+  function tick(){
+    var s=Math.floor((end-Date.now())/1000);
+    if(s<=0){w.innerHTML='<p class="bf26-cd-end">Últimas horas da Black!</p>';return;}
+    d.textContent=pad(Math.floor(s/86400));h.textContent=pad(Math.floor(s%86400/3600));m.textContent=pad(Math.floor(s%3600/60));
+    setTimeout(tick,(s%60+1)*1000);
+  }
+  tick();
+})();
+</script>
+
+</body></html>
