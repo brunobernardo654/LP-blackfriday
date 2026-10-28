@@ -129,20 +129,28 @@
 .bf26-mec .bf26-eyebrow{color:var(--b)}
 .bf26-mec .bf26-h2{color:#fff}
 .bf26-mec .bf26-sub{color:#C9CFDB}
-.bf26-mech{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:40px}
-.bf26-mc{background:#fff;color:var(--k);border-radius:12px;padding:28px;display:flex;flex-direction:column;gap:10px;border-top:6px solid var(--o)}
-.bf26-mc h3{font-weight:700;font-size:20px;line-height:1.25}
-.bf26-mk{font-weight:800;font-size:13px;line-height:1;letter-spacing:.14em;color:var(--ot)}
-.bf26-mv{font-weight:800;font-size:44px;line-height:1;letter-spacing:-.02em}
-.bf26-md{font-size:14px;line-height:1.5;color:var(--g)}
-.bf26-calc{margin-top:24px;background:var(--n2);border:1px solid #2A3550;border-radius:12px;padding:20px 24px;display:flex;justify-content:space-between;gap:24px;align-items:center;flex-wrap:wrap}
-.bf26-calc-l{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-.bf26-calc-q{font-weight:700;font-size:15px;line-height:1.4;color:var(--y)}
-.bf26-calc-v{font-weight:500;font-size:15px;line-height:1.4}
-.bf26-calc-v b{font-weight:800;font-size:26px}
-.bf26-calc-v .o{color:var(--o)}
-.bf26-calc-v .ar{color:var(--b)}
-.bf26-mec .bf26-note{color:#9AA3B5}
+/* Cupons — substitui .bf26-mech e .bf26-mc */
+.bf26-cps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;margin-top:40px}
+.bf26 .bf26-cp{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:#EB6626;color:#231F20;text-decoration:none;border-radius:12px;padding:18px 18px 16px;min-width:0;transition:transform .15s,box-shadow .15s,background .15s;
+  -webkit-mask:radial-gradient(circle 9px at 0 58%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 58%,#0000 98%,#000) right/51% 100% no-repeat;
+          mask:radial-gradient(circle 9px at 0 58%,#0000 98%,#000) left/51% 100% no-repeat,radial-gradient(circle 9px at 100% 58%,#0000 98%,#000) right/51% 100% no-repeat}
+.bf26 .bf26-cp:hover{background:#FFAF3E;transform:translateY(-3px);box-shadow:0 10px 24px rgba(0,0,0,.35)}
+.bf26 .bf26-cp:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.bf26-cp-cat{font-weight:800;font-size:12px;line-height:1;letter-spacing:.14em;text-transform:uppercase}
+.bf26-cp-off{font-weight:800;font-size:30px;line-height:1;letter-spacing:-.02em}
+.bf26-cp-code{margin-top:6px;width:100%;text-align:center;border:2px dashed #231F20;border-radius:8px;padding:8px 6px;font-weight:800;font-size:17px;line-height:1;letter-spacing:.06em;background:rgba(255,255,255,.25)}
+.bf26-cp-cta{margin-top:8px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;min-height:44px;border-radius:8px;background:#231F20;color:#fff;font-weight:700;font-size:14px}
+/* destaque BLACK333 */
+.bf26 .bf26-cp-hl{grid-column:span 2;background:#231F20;color:#fff;box-shadow:inset 0 0 0 2px #EB6626}
+.bf26 .bf26-cp-hl:hover{background:#000}
+.bf26-cp-hl .bf26-cp-cat{color:#EB6626}
+.bf26-cp-hl .bf26-cp-code{border-color:#EB6626;color:#FFD83D;background:rgba(235,102,38,.12);font-size:22px}
+.bf26-cp-hl .bf26-cp-cta{background:#EB6626;color:#231F20}
+@media (max-width:1100px){.bf26-cps{grid-template-columns:repeat(4,minmax(0,1fr))}.bf26 .bf26-cp-hl{grid-column:1/-1}}
+@media (max-width:900px){.bf26-cps{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media (max-width:600px){.bf26 .bf26-cp{padding:14px 12px}.bf26-cp-cat{font-size:10px;letter-spacing:.04em}.bf26-cp-off{font-size:24px}.bf26-cp-code{font-size:14px;letter-spacing:.02em}.bf26-cp-hl .bf26-cp-code{font-size:20px}.bf26-cp-cta{font-size:12px;gap:5px}}
+@media (max-width:340px){.bf26-cps{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.bf26 .bf26-cp{transition:none}}
 
 /* 07/08 vitrines */
 .bf26-v2{margin-top:72px;background:var(--s);padding:56px 0}
@@ -526,27 +534,71 @@
 <!-- 06 MECÂNICA — VALIDAR: regra de desconto (Bloqueio 1) -->
 <section id="mecanica" aria-labelledby="bf26-mec-t" class="bf26-mec">
   <span class="bf26-bar" aria-hidden="true"></span>
-  <img class="bf26-mec-ico" src="{{media url="wysiwyg/black-friday-2026/icone-colher-333obra.png"}}" alt="" aria-hidden="true">
+  <img class="bf26-mec-ico" src="{{media url=wysiwyg/black-friday-2026/icone-colher-333obra.png}}" alt="" aria-hidden="true" width="291" height="377">
   <div class="bf26-wrap">
     <p class="bf26-eyebrow">COMO FUNCIONA</p>
     <h2 id="bf26-mec-t" class="bf26-h2">Como aproveitar a Black da 333OBRA</h2>
-    <p class="bf26-sub">Cada categoria tem uma condição. O desconto aparece no pedido, antes do pagamento.</p>
-    <div class="bf26-mech">
-      <article class="bf26-mc"><p class="bf26-mk">01 · CIMENTOS</p><h3>Só na 1ª compra de cimento.</h3><p class="bf26-mv">Até 10% OFF</p><p class="bf26-md">Na primeira compra de cimento na 333OBRA, em pedidos a partir de R$ 1.000.</p></article>
-      <article class="bf26-mc"><p class="bf26-mk">02 · DEMAIS CATEGORIAS</p><h3>Em qualquer compra.</h3><p class="bf26-mv">Até 10% OFF</p><p class="bf26-md">Argamassas, blocos, tijolos, areia e demais categorias, em pedidos a partir de R$ 1.000.</p></article>
-      <article class="bf26-mc"><p class="bf26-mk">03 · REJUNTES</p><h3>Em qualquer pedido.</h3><p class="bf26-mv">15% OFF</p><p class="bf26-md">Desconto em rejuntes participantes, sem valor mínimo de pedido.</p></article>
+    <p class="bf26-sub">Escolha o cupom, anote o código e aplique no carrinho antes de finalizar o pedido.</p>
+    <!-- VALIDAR: URL do carrinho e % de cada cupom -->
+    <div class="bf26-cps">
+      <!-- VALIDAR: % de desconto e regra do BLACK333 -->
+      <a class="bf26-cp bf26-cp-hl" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom BLACK333: Desconto Black em Cupom geral Black. Ir para o carrinho">
+        <span class="bf26-cp-cat">Cupom geral Black</span>
+        <span class="bf26-cp-off">Desconto Black</span>
+        <span class="bf26-cp-code">BLACK333</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom CIMBLACK10: 10% OFF em Cimento. Ir para o carrinho">
+        <span class="bf26-cp-cat">Cimento</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">CIMBLACK10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom REJBLACK15: 15% OFF em Rejunte. Ir para o carrinho">
+        <span class="bf26-cp-cat">Rejunte</span>
+        <span class="bf26-cp-off">15% OFF</span>
+        <span class="bf26-cp-code">REJBLACK15</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom PEDRA10: 10% OFF em Pedra. Ir para o carrinho">
+        <span class="bf26-cp-cat">Pedra</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">PEDRA10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom AREIA10: 10% OFF em Areia. Ir para o carrinho">
+        <span class="bf26-cp-cat">Areia</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">AREIA10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom IMPER10: 10% OFF em Impermeabilizante. Ir para o carrinho">
+        <span class="bf26-cp-cat">Impermeabilizante</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">IMPER10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom FERRO10: 10% OFF em Ferro. Ir para o carrinho">
+        <span class="bf26-cp-cat">Ferro</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">FERRO10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom ARGA10: 10% OFF em Argamassa. Ir para o carrinho">
+        <span class="bf26-cp-cat">Argamassa</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">ARGA10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
+      <a class="bf26-cp" href="https://www.333obra.com.br/checkout/cart/" aria-label="Cupom TIJOLO10: 10% OFF em Tijolo. Ir para o carrinho">
+        <span class="bf26-cp-cat">Tijolo</span>
+        <span class="bf26-cp-off">10% OFF</span>
+        <span class="bf26-cp-code">TIJOLO10</span>
+        <span class="bf26-cp-cta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 4h2l2.4 11h11L21 7H6.2"/><circle cx="9" cy="19.5" r="1.5"/><circle cx="17" cy="19.5" r="1.5"/></svg><span>Usar no carrinho</span></span>
+      </a>
     </div>
-    <div class="bf26-calc">
-      <div class="bf26-calc-l">
-        <p class="bf26-calc-q">Quanto você economizaria?</p>
-        <p class="bf26-calc-v"><b>R$ 1.000</b> em compras <span class="ar" aria-hidden="true">→</span> <b class="o">até R$ 100 OFF</b></p>
-      </div>
-      <a href="#VALIDAR-URL-regulamento" class="bf26-btn bf26-btn-ghost">Ver regulamento</a>
-    </div>
-    <!-- VALIDAR: cumulatividade de cupons (Bloqueio 2) -->
-    <p class="bf26-note">Exemplo com desconto de 10%. Cupons e cumulatividade conforme regulamento.</p>
   </div>
-</section>
+  </section>
 
 <!-- 09b CREATORS — VALIDAR: links dos vídeos e uso de imagem conforme contrato -->
 <section aria-labelledby="bf26-cr-t" class="bf26-sec">
@@ -568,6 +620,7 @@
   <span class="bf26-crv"><img src="{{media url="wysiwyg/black-friday-2026/creator-bitelo-cupom-bitelo10.jpg"}}" alt="" loading="lazy"><span class="bf26-play" aria-hidden="true"></span></span>
   <span class="bf26-crn">Bitelo</span><span class="bf26-crd">Use o cupom BITELO10* e compara aí</span><span class="bf26-sr"> (assistir vídeo, abre em nova aba)</span>
 </a>
+</div>
 </div>
 </section>
 
@@ -603,6 +656,10 @@
     <div class="bf26-post-f"><a href="https://www.333obra.com.br/blog/post/rejunte-para-banheiro.html" aria-label="Ler no blog: Qual o melhor rejunte para banheiro? Conheça as opções!">Ler no blog →</a><a href="#VALIDAR-URL-rejuntes" class="o">Rejuntes em oferta</a></div>
   </div>
 </article>
+
+  </div>
+</div>
+</section>
 
 <!-- 11 SEO / GEO -->
 <section aria-labelledby="bf26-seo-t" class="bf26-sec">
